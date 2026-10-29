@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+/*
+ Filename:    number-muncher.css
+ Student:      Skylar Magouliotis (magouliotis4413)
+ Purpose:     Assignment 2
+ */
+
+/* Code for making the h1 and text nice */
+
+@import url("https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap");
+
+body {
+    background-color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: "Irish Grover", cursive;
+}
+
+/* Classes for rotating/flipping the mouth as it moves
+   in different directions */
+
+.faceRight {
+    rotate: 0deg;
+}
+
+.faceUp {
+    rotate: -90deg;
+}
+
+.faceDown {
+    rotate: 90deg;
+}
+
+.faceLeft {
+    transform: scaleX(-1);
+    rotate: 0deg;
+}
+
+/* Code for setting up the game grid */
+
+#gameGrid {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(10, 64px); /* Use JavsScript to update */
+    grid-template-rows: repeat(10, 64px);
+    font-size: 64px;
+}
+
+.cell {
+    border: 1px solid black;
+}
+
+.streak {
+    font-weight: bold;
+}
